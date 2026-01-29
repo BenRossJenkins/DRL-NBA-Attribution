@@ -54,6 +54,7 @@ These limitations lead to systematic undervaluation of defensive specialists and
 - **Events**: 23 distinct action types
 - **Validation**: Forward-chaining cross-validation (k=3 folds)
 - **Quality Control**: ~2% of games excluded for data issues
+- **data_loader.py**: downloads NBA play-by-play data using nba_on_court, adds on-court player columns (AWAY_PLAYER1-5 and HOME_PLAYER1-5) for each event, and saves the processed data
 
 **Temporal Structure**: Strict chronological splits ensure no future information leakage into training
 
